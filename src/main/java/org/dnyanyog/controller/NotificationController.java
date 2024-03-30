@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class NotificationController {
 
-	@Autowired
-	NotificationServiceImpl service;
+  @Autowired NotificationServiceImpl service;
 
-	@PostMapping(path = "/api/notification/v1/notify", consumes = { "application/json",
-			"application/xml" }, produces = { "application/json", "application/xml" })
-	public NotificationResponse depositAmount(@RequestBody NotificationRequest request) {
-		return service.sendEmail(request);
-	}
+  @PostMapping(
+      path = "/api/notification/v1/notify",
+      consumes = {"application/json", "application/xml"},
+      produces = {"application/json", "application/xml"})
+  public NotificationResponse depositAmount(@RequestBody NotificationRequest request) {
+    return service.sendEmail(request);
+  }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+
+	<changeSet id="20240420" author="Abhijeet Nirphal">
+		<insert tableName="Notification" schemaName="notification_service_liqibase">
+			<column name="notification_code" value="123456789" />
+			<column name="client_id" value="client123" />
+			<column name="mode" value="mode123" />
+			<column name="subject" value="Test Subject" />
+			<column name="body" value="Test Body" />
+			<column name="footer" value="Test Footer" />
+			<column name="from_email" value="from@example.com" />
+			<column name="to_email" value="to@example.com" />
+			<column name="created_date" value="2024-04-20T00:00:00" />
+			<column name="updated_date" value="2024-04-20T00:00:00" />
+		</insert>
+	</changeSet>
+
+
+</databaseChangeLog>
